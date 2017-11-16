@@ -4,3 +4,5 @@ if [[ -s "$HOME/.dotfiles/zsh/prezto/init.zsh" ]]; then
 fi
 
 # more config here
+
+test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"

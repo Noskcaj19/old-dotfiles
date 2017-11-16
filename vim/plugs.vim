@@ -29,7 +29,7 @@ Plug 'corntrace/bufexplorer'
 Plug 'ctrlpvim/ctrlp.vim'
 
 " UI Stuff
-Plug 'scrooloose/nerdtree'
+Plug 'scrooloose/nerdtree',  { 'on':  'NERDTreeToggle' }
 Plug 'mbbill/undotree'
 Plug 'kshenoy/vim-signature'
 Plug 'airblade/vim-gitgutter'

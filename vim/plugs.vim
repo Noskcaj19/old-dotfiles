@@ -1,5 +1,6 @@
 "" Load plugins
-call plug#begin('~/.dotfiles/vim/plugins/')
+call plug#begin(g:nvim_config_path.'/plugins')
+
 
 " Misc
 Plug 'vim-scripts/tlib'

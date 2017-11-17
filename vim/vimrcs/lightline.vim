@@ -1,6 +1,6 @@
 set laststatus=2
+set showtabline=2  " always show tabline
 
-" use lightline-buffer in lightline
 let g:lightline = {
     \ 'colorscheme': 'solarized',
     \ 'tabline': {

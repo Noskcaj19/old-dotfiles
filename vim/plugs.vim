@@ -14,6 +14,8 @@ Plug 'jremmen/vim-ripgrep'
 Plug 'garbas/vim-snipmate'
 Plug 'scrooloose/snipmate-snippets'
 Plug 'honza/vim-snippets'
+" Plug 'Shougo/neosnippet'
+" Plug 'Shougo/neosnippet-snippets'
 
 " Editing
 Plug 'terryma/vim-multiple-cursors'
@@ -23,6 +25,7 @@ Plug 'tpope/vim-surround'
 Plug 'tpope/vim-repeat'
 Plug 'tpope/vim-commentary'
 Plug 'maxbrunsfeld/vim-yankstack'
+Plug 'jiangmiao/auto-pairs'
 
 " Navigation
 Plug 'corntrace/bufexplorer'

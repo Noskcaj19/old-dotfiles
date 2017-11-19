@@ -21,6 +21,15 @@ let g:neocomplete#enable_camel_case = 1
 let g:neocomplete#enable_smart_case = 1
 
 " Default # of completions is 100, that's crazy.
-let g:neocomplete#max_list = 5
+let g:deoplete#max_list = 30
 
 inoremap <C-Space> <C-n>
+
+" Fix multicursor issue
+function! Multiple_cursors_before()
+    let b:deoplete_disable_auto_complete = 1
+endfunction
+
+function! Multiple_cursors_after()
+    let b:deoplete_disable_auto_complete = 0
+endfunction

@@ -25,3 +25,8 @@ map <leader>h :bprevious<cr>
 map <leader>pp :setlocal paste!<cr>
 
 map <leader>cc :botright cope<cr>
+
+" Ctrl-p buffer
+nnoremap <C-T> :CtrlPBuffer<cr>
+
+imap <leader>nn <C-O>o

@@ -57,6 +57,9 @@ set encoding=utf8
 " Use Unix as the standard file type
 set ffs=unix,dos,mac
 
+set nowrap
+set scrolloff=7
+set sidescrolloff=5
 
 " Turn backup off, since most stuff is in SVN, git et.c anyway...
 set nobackup

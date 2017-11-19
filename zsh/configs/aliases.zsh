@@ -1,24 +1,22 @@
+# Vim
 alias vim="nvim"
 
+# ls shortcuts
 alias ls="exa"
 alias lt1="exa -TL1"
 alias lt2="exa -TL2"
 alias lt3="exa -TL3"
 
 # Override zsh aliases
-unalias l
-unalias ll
-unalias lr
-unalias la
-unalias lm
-unalias lx
-unalias lk
-unalias lt
-unalias lc
-unalias lu
+unalias l ll lr la lm lx lk lt lc lu >/dev/null 2>/dev/null
 
 alias l="exa -1a"
 alias ll="exa -l"
 alias la="exa -la"
 alias laa="exa -a"
 alias lk="exa -s size"
+
+# Cargo shortcuts
+alias car="cargo run"
+alias cab="cargo build"
+alias cac="cargo check"

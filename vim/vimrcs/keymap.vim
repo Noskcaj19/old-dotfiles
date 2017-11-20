@@ -17,8 +17,10 @@ map <leader>bd :Bclose<cr>:tabclose<cr>gT
 " Close all the buffers
 map <leader>ba :bufdo bd<cr>
 
-map <leader>l :bnext<cr>
-map <leader>h :bprevious<cr>
+" ALT-]
+map <leader>‘ :bnext<cr>
+" ALT-[
+map <leader>“ :bprevious<cr>
 
 
 " Toggle paste mode on and off

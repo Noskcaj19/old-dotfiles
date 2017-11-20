@@ -12,7 +12,7 @@ let g:lightline = {
     \ 'active': {
     \     'left': [ ['mode', 'paste'],
     \             ['fugitive', 'readonly', 'filename', 'modified'] ],
-    \   'right': [ [ 'lineinfo' ], ['percent'] ]
+    \   'right': [ [ 'lineinfo' ], ['percent'], [ 'encoding' ] ]
     \ },
     \ 'component_expand': {
     \   'buffercurrent': 'lightline#buffer#buffercurrent',
@@ -31,7 +31,8 @@ let g:lightline = {
     \   'separator': '',
     \   'readonly': '%{&filetype=="help"?"":&readonly?"🔒":""}',
     \   'modified': '%{&filetype=="help"?"":&modified?"+":&modifiable?"":"-"}',
-    \   'fugitive': '%{exists("*fugitive#head")?fugitive#head():""}'
+    \   'fugitive': '%{exists("*fugitive#head")?fugitive#head():""}',
+    \   'encoding': '%{&fileencoding=="utf-8"?"":&fileencoding}'
     \ },
     \ 'component_visible_condition': {
     \   'readonly': '(&filetype!="help"&& &readonly)',

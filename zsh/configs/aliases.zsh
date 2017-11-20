@@ -20,3 +20,6 @@ alias lk="exa -s size"
 alias car="cargo run"
 alias cab="cargo build"
 alias cac="cargo check"
+
+# Clip alias
+alias -g clip='$(pbpaste)'

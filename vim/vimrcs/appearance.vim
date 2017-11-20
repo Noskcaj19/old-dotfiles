@@ -1,6 +1,6 @@
 colorscheme solarized
 
-function Set_background()
+function! s:set_background()
     if $COLORSCHEME_BACKGROUND == "light"
         set background=light
     else
@@ -8,25 +8,25 @@ function Set_background()
     endif
 endfunction
 
-function Update_colorscheme()
-    call Set_background()
+function! s:update_colorscheme()
+    call s:set_background()
     exe "source " . g:plug_home . "/lightline.vim/autoload/lightline/colorscheme/solarized.vim"
     call lightline#init()
     call lightline#colorscheme()
     call lightline#update()
 endfunction
 
-function Set_light()
+function! Set_light()
     let $COLORSCHEME_BACKGROUND="light"
-    call Update_colorscheme()
+    call s:update_colorscheme()
 endfunction
 
-function Set_dark()
+function! Set_dark()
     let $COLORSCHEME_BACKGROUND="dark"
-    call Update_colorscheme()
+    call s:update_colorscheme()
 endfunction
 
-call Set_background()
+call s:set_background()
 
 
 " Enable syntax highlighting
@@ -44,3 +44,4 @@ set noshowmode
 set number
 set relativenumber
 
+set nowrap

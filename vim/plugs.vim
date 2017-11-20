@@ -26,6 +26,7 @@ Plug 'tpope/vim-repeat'
 Plug 'tpope/vim-commentary'
 Plug 'maxbrunsfeld/vim-yankstack'
 Plug 'jiangmiao/auto-pairs'
+Plug 'easymotion/vim-easymotion'
 
 " Navigation
 Plug 'corntrace/bufexplorer'

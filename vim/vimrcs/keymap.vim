@@ -18,9 +18,9 @@ map <leader>bd :Bclose<cr>:tabclose<cr>gT
 map <leader>ba :bufdo bd<cr>
 
 " ALT-]
-map <leader>‘ :bnext<cr>
+map ‘ :bnext<cr>
 " ALT-[
-map <leader>“ :bprevious<cr>
+map “ :bprevious<cr>
 
 
 " Toggle paste mode on and off

@@ -25,9 +25,6 @@ else
     set wildignore+=*/.git/*,*/.hg/*,*/.svn/*,*/.DS_Store
 endif
 
-" Height of the command bar
-set cmdheight=2
-
 " A buffer becomes hidden when it is abandoned
 set hid
 
@@ -70,7 +67,7 @@ set noswapfile
 au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif
 
 try
-    set undodir=~/.vim_runtime/temp_dirs/undodir
+    set undodir=~/.files/vim/temp_dirs/undodir
     set undofile
 catch
 endtry

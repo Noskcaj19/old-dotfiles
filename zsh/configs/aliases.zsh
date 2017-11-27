@@ -23,3 +23,6 @@ alias cac="cargo check"
 
 # Clip alias
 alias -g clip='$(pbpaste)'
+
+# Iterm cd tab
+alias cdt="osascript -l JavaScript ~/.files/automation/cd-tab.applescript"

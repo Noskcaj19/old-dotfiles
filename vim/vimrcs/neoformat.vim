@@ -11,9 +11,12 @@ let g:neoformat_rust_rustup_nightly = {
 
 let g:neoformat_enabled_rust = ['rustup_nightly']
 
+" Fix js format bug
+let g:neoformat_enabled_javascript = []
 
 " Auto-fmt on save
 augroup fmt
     autocmd!
     autocmd BufWritePre * undojoin | Neoformat
 augroup END
+

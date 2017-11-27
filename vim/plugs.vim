@@ -33,7 +33,7 @@ Plug 'corntrace/bufexplorer'
 Plug 'ctrlpvim/ctrlp.vim'
 
 " UI Stuff
-Plug 'scrooloose/nerdtree' ",  { 'on':  'NERDTreeToggle' }
+Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
 Plug 'mbbill/undotree', { 'on': ['UndotreeShow', 'UndotreeToggle'] }
 Plug 'kshenoy/vim-signature'
 Plug 'airblade/vim-gitgutter'
@@ -60,7 +60,7 @@ Plug 'sbdchd/neoformat'
 " Themes
 Plug 'tomasr/molokai'
 Plug 'altercation/vim-colors-solarized'
-
+" Plug 'lifepillar/vim-solarized8'
 
 "" Done loading
 call plug#end()

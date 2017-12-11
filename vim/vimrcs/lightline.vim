@@ -2,7 +2,7 @@ set laststatus=2
 set showtabline=2  " always show tabline
 
 let g:lightline = {
-    \ 'colorscheme': 'solarized',
+    \ 'colorscheme': g:airline_colorscheme,
     \ 'tabline': {
     \   'left': [ [ 'bufferinfo' ],
     \             [ 'separator' ],

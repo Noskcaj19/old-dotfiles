@@ -1,5 +1,3 @@
-colorscheme solarized
-
 function! s:set_background()
     if $COLORSCHEME_BACKGROUND == "light"
         set background=light
@@ -27,6 +25,18 @@ function! Set_dark()
 endfunction
 
 call s:set_background()
+
+
+" set background=dark
+
+if (g:is_ssh)
+    colorscheme molokai
+    let g:airline_colorscheme="powerline"
+else
+    set background=dark
+    colorscheme solarized
+    let g:airline_colorscheme="solarized"
+endif
 
 
 " Enable syntax highlighting

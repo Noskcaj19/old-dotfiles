@@ -14,15 +14,9 @@ function! s:update_colorscheme()
     call lightline#update()
 endfunction
 
-function! Set_light()
-    let $COLORSCHEME_BACKGROUND="light"
-    call s:update_colorscheme()
-endfunction
+command! Setlight let $COLORSCHEME_BACKGROUND="light" | call s:update_colorscheme()
 
-function! Set_dark()
-    let $COLORSCHEME_BACKGROUND="dark"
-    call s:update_colorscheme()
-endfunction
+command! Setdark let $COLORSCHEME_BACKGROUND="dark" | call s:update_colorscheme()
 
 call s:set_background()
 

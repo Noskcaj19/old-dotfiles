@@ -33,6 +33,7 @@ set backspace=eol,start,indent
 set whichwrap+=<,>,h,l
 
 " When searching try to be smart about cases 
+set ignorecase
 set smartcase
 
 " Highlight search results

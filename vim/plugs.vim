@@ -50,6 +50,9 @@ Plug 'tpope/vim-markdown', { 'for': 'markdown' }
 Plug 'fatih/vim-go', { 'for': 'go' }
 Plug 'nvie/vim-flake8', { 'for': 'python' }
 Plug 'kchmck/vim-coffee-script', { 'for': 'coffee' }
+" Plug 'jelera/vim-javascript-syntax', { 'for': 'javascript' }
+Plug 'othree/yajs.vim', { 'for': 'javascript' }
+Plug 'pangloss/vim-javascript', { 'for': 'javascript' }
 
 " Programming Tools
 Plug 'scrooloose/syntastic'

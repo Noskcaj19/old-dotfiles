@@ -46,6 +46,9 @@ set incsearch
 " Don't redraw while executing macros (good performance config)
 set lazyredraw
 
+" Use marker folding
+set foldmethod=marker
+
 " For regular expressions turn magic on
 set magic
 

@@ -25,11 +25,11 @@ call s:set_background()
 
 if (g:is_ssh)
     colorscheme molokai
-    let g:airline_colorscheme="powerline"
+    let g:lightline_colorscheme="powerline"
 else
     set background=dark
     colorscheme solarized
-    let g:airline_colorscheme="solarized"
+    let g:lightline_colorscheme="solarized"
 endif
 
 

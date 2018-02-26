@@ -1,24 +1,20 @@
 let g:nvim_config_path = expand('<sfile>:p:h')
 
-let &rtp .= ','.g:nvim_config_path
+let &rtp .= ',' . g:nvim_config_path
 if !isdirectory(g:nvim_config_path . "/plugins")
     autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
 endif
 
+" To be safe
 set nocompatible
 
 " Load vim-plug plugins
 runtime plugs.vim
 
-if "" != $SSH_CLIENT
-    let g:is_ssh = 1
-    set guicursor=
-else
-    let g:is_ssh = 0
-endif
 
+exec "source" g:nvim_config_path . '/preconfig.vim'
 
 " Load configs
-for fpath in split(globpath(g:nvim_config_path.'/vimrcs', '*.vim'), '\n')
+for fpath in split(globpath(g:nvim_config_path . '/configs', '*.vim'), '\n')
    exe 'source' fpath
 endfor

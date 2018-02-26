@@ -1,23 +1,26 @@
-" Sets how many lines of history VIM has to remember
+" Basic necessities
+
+" Big history
 set history=500
 
 " Enable filetype plugins
 filetype plugin on
 filetype indent on
 
-" Set to auto read when a file is changed from the outside
+" Autoread external changes
 set autoread
 
+" Set <leader> to ,
 let mapleader = ","
 let g:mapleader = ","
 
-" Fast saving
+" Fast save keybind
 nmap <leader>w :w!<cr>
 
-" Turn on the WiLd menu
+" Enable wild menu
 set wildmenu
 
-" Ignore compiled files
+" Add ignores
 set wildignore=*.o,*~,*.pyc
 if has("win16") || has("win32")
     set wildignore+=.git\*,.hg\*,.svn\*
@@ -25,32 +28,34 @@ else
     set wildignore+=*/.git/*,*/.hg/*,*/.svn/*,*/.DS_Store
 endif
 
-" A buffer becomes hidden when it is abandoned
+
+" Allow hidden buffers
 set hid
 
-" Configure backspace so it acts as it should act
+
+" Improved backspace
 set backspace=eol,start,indent
 set whichwrap+=<,>,h,l
 
-" When searching try to be smart about cases 
+" Smarter searching
 set ignorecase
 set smartcase
 
-" Highlight search results
+" Search result highlighting
 set hlsearch
 
-
-" Makes search act like search in modern browsers
+" Enable incremental searching (modern like)
 set incsearch
 
-" Don't redraw while executing macros (good performance config)
+" Enable lazy drawing
 set lazyredraw
 
-" Use marker folding
+" Enable marker folding
 set foldmethod=marker
 
-" For regular expressions turn magic on
+" Enable regular magic
 set magic
+
 
 " Set utf8 as standard encoding and en_US as the standard language
 set encoding=utf8
@@ -58,11 +63,18 @@ set encoding=utf8
 " Use Unix as the standard file type
 set ffs=unix,dos,mac
 
+
+" Disable text wrapping
 set nowrap
-set scrolloff=7
+
+" Keep cursor 5 chars away from left and right while scrolling
 set sidescrolloff=5
 
-" Turn backup off, since most stuff is in SVN, git et.c anyway...
+" Keep cursor 7 lines from bottom and top
+set scrolloff=7
+
+
+" Disable backup, cause git
 set nobackup
 set nowb
 set noswapfile

@@ -20,5 +20,5 @@ function run(argv) {
 	var pid = app.doShellScript(`lsof ${tty} | (head -2 | tail -1) | tr -s ' ' | cut -d ' ' -f2`);	
 	let cwd = app.doShellScript(`lsof -p ${pid} | grep 'cwd' | head -1 | tr -s ' ' | cut -d ' ' -f9`);
 
-	iterm.write(window.currentTab().currentSession(), {text: ` cd '${cwd}';`});
+	iterm.write(window.currentTab().currentSession(), {text: ` ;cd '${cwd}';`});
 }

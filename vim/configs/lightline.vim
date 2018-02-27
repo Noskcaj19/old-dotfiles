@@ -9,14 +9,19 @@ set noshowmode
 let g:lightline_buffer_show_bufnr = 0
 let g:lightline_buffer_modified_icon = '+'
 
+" Ale lightline settings
+let g:lightline#ale#indicator_warnings = ''
+let g:lightline#ale#indicator_errors = ''
+let g:lightline#ale#indicator_ok = ''
+
 
 let g:lightline = {}
 let g:lightline.colorscheme = "solarized"
 
 " Tabline
 let g:lightline.tabline = {}
-let g:lightline.tabline.left = [ [ "bufferbefore", "buffercurrent", "bufferafter" ] ]
-let g:lightline.tabline.right = []
+let g:lightline.tabline.left = [ [ 'bufferbefore', 'buffercurrent', 'bufferafter' ] ]
+let g:lightline.tabline.right = [ [ 'linter_errors', 'linter_warnings', 'linter_ok' ] ]
 
 " Status line (bottom)
 let g:lightline.active = {}
@@ -25,15 +30,25 @@ let g:lightline.active.right = [ [ 'lineinfo' ], ['percent'], [ 'encoding' ] ]
 
 " Component Expand
 let g:lightline.component_expand = {}
+" Lightline buffer
 let g:lightline.component_expand.buffercurrent = "lightline#buffer#buffercurrent"
 let g:lightline.component_expand.bufferbefore = "lightline#buffer#bufferbefore"
 let g:lightline.component_expand.bufferafter = "lightline#buffer#bufferafter"
+" Lightline ALE
+let g:lightline.component_expand.linter_warnings = "lightline#ale#warnings"
+let g:lightline.component_expand.linter_errors = "lightline#ale#errors"
+let g:lightline.component_expand.linter_ok = "lightline#ale#ok"
 
 " Component Types
 let g:lightline.component_type = {}
+" Lightline buffer
 let g:lightline.component_type.buffercurrent = "tabsel"
 let g:lightline.component_type.bufferbefore = "raw"
 let g:lightline.component_type.bufferafter = "raw"
+" Lightline ALE
+let g:lightline.component_type.linter_warnings = "warning"
+let g:lightline.component_type.linter_errors = "error"
+let g:lightline.component_type.linter_ok = "left"
 
 " Component Visibility
 let g:lightline.component_visible_condition = {}

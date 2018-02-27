@@ -6,6 +6,11 @@ Plug 'itchyny/lightline.vim'
 Plug 'taohex/lightline-buffer'
 
 
+" Programming utilities
+Plug 'w0rp/ale'
+Plug 'maximbaz/lightline-ale'
+
+
 " Themes
 Plug 'altercation/vim-colors-solarized'
 

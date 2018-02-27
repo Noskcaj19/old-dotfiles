@@ -4,6 +4,7 @@ call plug#begin(g:nvim_config_path . '/plugins')
 " UI
 Plug 'itchyny/lightline.vim'
 Plug 'taohex/lightline-buffer'
+Plug 'kshenoy/vim-signature'
 
 
 " Programming utilities

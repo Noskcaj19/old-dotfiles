@@ -1,3 +1,10 @@
-let g:ale_linters = {'rust': ['rls']}
+" Enable real time rust linting
+let g:ale_linters = {}
+let g:ale_linters.rust = [ 'rls' ]
 
-"let g:ale_rust_rls_executable = 'rustup run nightly rls'
+" Enable rust autoformatting
+let g:ale_fix_on_save = 1
+
+" Add rustfmt auto formatter
+let g:ale_fixers = {}
+let g:ale_fixers.rust = [ 'rustfmt' ]

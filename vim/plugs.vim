@@ -16,6 +16,7 @@ Plug 'rust-lang/rust.vim'
 
 " Themes
 Plug 'altercation/vim-colors-solarized'
+Plug 'tomasr/molokai'
 
 "" Finish loading
 call plug#end()

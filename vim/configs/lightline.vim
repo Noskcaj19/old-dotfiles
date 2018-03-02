@@ -16,7 +16,7 @@ let g:lightline#ale#indicator_ok = ''
 
 
 let g:lightline = {}
-let g:lightline.colorscheme = "solarized"
+let g:lightline.colorscheme = g:lightline_colorscheme
 
 " Tabline
 let g:lightline.tabline = {}

@@ -11,6 +11,8 @@ Plug 'kshenoy/vim-signature'
 Plug 'w0rp/ale'
 Plug 'maximbaz/lightline-ale'
 
+" Programming language support
+Plug 'rust-lang/rust.vim'
 
 " Themes
 Plug 'altercation/vim-colors-solarized'

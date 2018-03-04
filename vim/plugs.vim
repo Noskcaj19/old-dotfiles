@@ -6,6 +6,8 @@ Plug 'itchyny/lightline.vim'
 Plug 'taohex/lightline-buffer'
 Plug 'kshenoy/vim-signature'
 
+" Navigation
+Plug '/usr/local/opt/fzf'
 
 " Programming utilities
 Plug 'w0rp/ale'

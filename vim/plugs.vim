@@ -11,6 +11,8 @@ Plug 'kshenoy/vim-signature'
 Plug 'w0rp/ale'
 Plug 'maximbaz/lightline-ale'
 
+Plug 'autozimu/LanguageClient-neovim', { 'branch': 'next', 'do': 'bash install.sh' }
+
 " Programming language support
 Plug 'rust-lang/rust.vim'
 

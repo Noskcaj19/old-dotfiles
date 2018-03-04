@@ -11,6 +11,7 @@ Plug 'kshenoy/vim-signature'
 
 " Navigation
 Plug '/usr/local/opt/fzf'
+Plug 'junegunn/fzf.vim'
 
 " Programming utilities
 Plug 'w0rp/ale'

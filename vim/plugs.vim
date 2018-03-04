@@ -15,6 +15,7 @@ Plug '/usr/local/opt/fzf'
 " Programming utilities
 Plug 'w0rp/ale'
 Plug 'maximbaz/lightline-ale'
+Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 
 Plug 'autozimu/LanguageClient-neovim', { 'branch': 'next', 'do': 'bash install.sh' }
 

@@ -1,6 +1,9 @@
 "" Set plugin folder
 call plug#begin(g:nvim_config_path . '/plugins')
 
+" Editing utilities
+Plug 'tpope/vim-surround'
+
 " UI
 Plug 'itchyny/lightline.vim'
 Plug 'taohex/lightline-buffer'

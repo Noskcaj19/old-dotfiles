@@ -1,6 +1,6 @@
 " Enable real time rust linting
 let g:ale_linters = {}
-let g:ale_linters.rust = [ 'rls' ]
+let g:ale_linters.rust = []
 
 " Enable rust autoformatting
 let g:ale_fix_on_save = 1

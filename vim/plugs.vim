@@ -10,6 +10,7 @@ Plug 'taohex/lightline-buffer'
 Plug 'kshenoy/vim-signature'
 
 " Navigation
+Plug 'ctrlpvim/ctrlp.vim'
 Plug '/usr/local/opt/fzf'
 Plug 'junegunn/fzf.vim'
 

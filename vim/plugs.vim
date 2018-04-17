@@ -6,7 +6,7 @@ Plug 'tpope/vim-surround'
 
 " UI
 Plug 'itchyny/lightline.vim'
-Plug 'taohex/lightline-buffer'
+Plug 'taohexxx/lightline-buffer'
 Plug 'kshenoy/vim-signature'
 
 " Navigation

@@ -28,6 +28,6 @@ if (g:is_ssh)
     let g:lightline_colorscheme="powerline"
 else
     set background=dark
-    colorscheme solarized
+    colorscheme solarized8
     let g:lightline_colorscheme="solarized"
 endif

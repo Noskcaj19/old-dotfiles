@@ -2,7 +2,8 @@
 set background=dark
 
 " Set colorscheme
-colorscheme solarized
+set termguicolors
+colorscheme solarized8
 
 " Set shortmess
 " Disable intro message and the completion notice

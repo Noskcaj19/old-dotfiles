@@ -23,6 +23,7 @@ Plug 'autozimu/LanguageClient-neovim', { 'branch': 'next', 'do': 'bash install.s
 
 " Programming language support
 Plug 'rust-lang/rust.vim'
+Plug 'Twinside/vim-haskellConceal', { 'for': 'haskell' }
 
 " Themes
 Plug 'altercation/vim-colors-solarized'

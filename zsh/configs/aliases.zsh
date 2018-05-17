@@ -32,6 +32,6 @@ function mdfindg() {
 }
 
 function z() {
-  local dir
-  dir="$(fasd -Rdl "$0" | fzf -1 -0 --no-sort +m)" && cd "${dir}" || return 1
+    cd "$(fasd -Rdl "$@" | fzf -1 -0 --no-sort +m)" || return 1
+
 }

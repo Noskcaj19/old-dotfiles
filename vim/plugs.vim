@@ -3,6 +3,8 @@ call plug#begin(g:nvim_config_path . '/plugins')
 
 " Editing utilities
 Plug 'tpope/vim-surround'
+Plug 'tpope/vim-commentary'
+Plug 'jiangmiao/auto-pairs'
 
 " UI
 Plug 'itchyny/lightline.vim'
@@ -22,8 +24,13 @@ Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 Plug 'autozimu/LanguageClient-neovim', { 'branch': 'next', 'do': 'bash install.sh' }
 
 " Programming language support
+"" Rust
 Plug 'rust-lang/rust.vim'
+"" Haskell
 Plug 'Twinside/vim-haskellConceal', { 'for': 'haskell' }
+"" Go
+Plug 'fatih/vim-go', { 'for': 'go' }
+Plug 'zchee/deoplete-go', { 'do': 'make'}
 
 " Themes
 Plug 'altercation/vim-colors-solarized'

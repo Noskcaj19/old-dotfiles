@@ -19,9 +19,13 @@ Plug 'junegunn/fzf.vim'
 " Programming utilities
 Plug 'w0rp/ale'
 Plug 'maximbaz/lightline-ale'
+Plug 'autozimu/LanguageClient-neovim', { 'branch': 'next', 'do': 'bash install.sh' }
 Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 
-Plug 'autozimu/LanguageClient-neovim', { 'branch': 'next', 'do': 'bash install.sh' }
+"" Snippets
+Plug 'Shougo/neosnippet.vim'
+Plug 'Shougo/neosnippet-snippets'
+Plug 'honza/vim-snippets'
 
 " Programming language support
 "" Rust

@@ -11,3 +11,5 @@ let g:ale_fix_on_save = 1
 " Add rustfmt auto formatter
 let g:ale_fixers = {}
 let g:ale_fixers.rust = [ 'rustfmt' ]
+let g:ale_fixers.c = [ 'clang-format' ]
+let g:ale_fixers.cpp = [ 'clang-format' ]

@@ -32,6 +32,8 @@ endif
 " Allow hidden buffers
 set hid
 
+" Enable mouse
+set mouse=a
 
 " Improved backspace
 set backspace=eol,start,indent

@@ -41,5 +41,8 @@ Plug 'altercation/vim-colors-solarized'
 Plug 'lifepillar/vim-solarized8'
 Plug 'tomasr/molokai'
 
+" Random
+Plug 'wakatime/vim-wakatime'
+
 "" Finish loading
 call plug#end()

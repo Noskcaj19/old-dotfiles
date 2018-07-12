@@ -10,6 +10,7 @@ Plug 'jiangmiao/auto-pairs'
 Plug 'itchyny/lightline.vim'
 Plug 'taohexxx/lightline-buffer'
 Plug 'kshenoy/vim-signature'
+Plug 'airblade/vim-gitgutter'
 
 " Navigation
 Plug 'ctrlpvim/ctrlp.vim'

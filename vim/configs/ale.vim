@@ -13,3 +13,4 @@ let g:ale_fixers = {}
 let g:ale_fixers.rust = [ 'rustfmt' ]
 let g:ale_fixers.c = [ 'clang-format' ]
 let g:ale_fixers.cpp = [ 'clang-format' ]
+let g:ale_fixers.python = [ 'black' ]

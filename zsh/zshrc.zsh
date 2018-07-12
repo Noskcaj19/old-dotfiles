@@ -8,7 +8,4 @@ fi
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
 test -e "/Users/Jack/Downloads/google-cloud-sdk/path.zsh.inc" && source /Users/Jack/Downloads/google-cloud-sdk/path.zsh.inc
 
-export GOPATH=$HOME/go
-export PATH=$PATH:$GOPATH/bin
-
 for config ($HOME/.files/zsh/configs/*.zsh) source $config

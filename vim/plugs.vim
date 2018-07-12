@@ -11,6 +11,7 @@ Plug 'itchyny/lightline.vim'
 Plug 'taohexxx/lightline-buffer'
 Plug 'kshenoy/vim-signature'
 Plug 'airblade/vim-gitgutter'
+Plug 'tpope/vim-vinegar'
 
 " Navigation
 Plug 'ctrlpvim/ctrlp.vim'

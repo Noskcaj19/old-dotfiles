@@ -9,3 +9,5 @@ test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell
 test -e "/Users/Jack/Downloads/google-cloud-sdk/path.zsh.inc" && source /Users/Jack/Downloads/google-cloud-sdk/path.zsh.inc
 
 for config ($HOME/.files/zsh/configs/*.zsh) source $config
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh

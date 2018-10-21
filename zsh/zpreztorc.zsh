@@ -29,6 +29,7 @@ zstyle ':prezto:load' pmodule \
   'fasd' \
   'git' \
   'osx' \
+  'command-not-found' \
   'syntax-highlighting' \
   'history-substring-search' \
   'prompt'

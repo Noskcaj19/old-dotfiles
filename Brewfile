@@ -6,6 +6,7 @@ tap "homebrew/services"
 tap "homebrew/cask-fonts"
 tap "homebrew/cask-versions"
 tap "homebrew/livecheck"
+tap "homebrew/command-not-found"
 brew "mas"
 
 

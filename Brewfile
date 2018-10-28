@@ -88,6 +88,9 @@ brew "imagemagick"
 brew "aspell"
 brew "coreutils"
 brew "wine"
+brew "autoconf"
+brew "automake"
+brew "makedepend"
 
 # Tools
 brew "git"
@@ -129,7 +132,7 @@ cask "font-hack-nerd-font"
 cask "leap-motion"
 cask "osxfuse"
 cask "spotify"
-cask "vivaldi"
+cask "vivaldi-snapshot"
 cask "ti-connect-ce"
 cask "loopback"
 cask "virtualbox"
@@ -139,6 +142,9 @@ cask "calibre"
 cask "sourcetree"
 cask "imazing"
 cask "discretescroll"
+cask "bitwarden"
+cask "mailspring"
+cask "wireshark"
 
 # MAS Applications
 mas "1Password", id: 443987910

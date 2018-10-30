@@ -14,6 +14,7 @@ brew "mas"
 tap "clangen/musikcube"
 # Chunkwm / skhd
 tap "koekeishiya/formulae"
+tap "crisidev/homebrew-chunkwm"
 # Neovim
 tap "neovim/neovim"
 
@@ -34,6 +35,9 @@ brew "protobuf"
 brew "portaudio"
 
 # Languages
+brew "python"
+brew "python@2"
+brew "pypy3"
 brew "gcc"
 brew "go"
 brew "haskell-stack"
@@ -51,6 +55,7 @@ brew "cmake"
 brew "exercism"
 brew "travis"
 brew "swiftformat"
+brew "ipython"
 
 # Random display utlities
 brew "asciinema"
@@ -127,7 +132,7 @@ brew "nano"
 mas "Xcode", id: 497799835
 
 # Applications
-cask "discord-canary"
+cask "discord-ptb"
 cask "font-hack-nerd-font"
 cask "leap-motion"
 cask "osxfuse"

@@ -15,6 +15,9 @@ zstyle ':prezto:*:*' case-sensitive 'no'
 # Color output (auto set to 'no' on dumb terminals).
 zstyle ':prezto:*:*' color 'yes'
 
+# Add custom modules dir
+zstyle ':prezto:load' pmodule-dirs $HOME/.files/zsh/zprezto-contrib
+
 # Set the Prezto modules to load (browse modules).
 # The order matters.
 zstyle ':prezto:load' pmodule \
@@ -27,6 +30,7 @@ zstyle ':prezto:load' pmodule \
   'utility' \
   'completion' \
   'fasd' \
+  'dotenv' \
   'git' \
   'osx' \
   'command-not-found' \

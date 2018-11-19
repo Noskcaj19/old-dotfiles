@@ -17,9 +17,12 @@ tap "koekeishiya/formulae"
 tap "crisidev/homebrew-chunkwm"
 # Neovim
 tap "neovim/neovim"
+# Go metalinter
+tap "alecthomas/tap"
 
 
 # Libraries
+brew "libssh2"
 brew "sdl2"
 brew "sdl2_ttf"
 brew "opencv"
@@ -48,14 +51,17 @@ brew "node"
 brew "yarn"
 brew "jq"
 brew "jupyter"
+brew "perl"
 
 # Language related
+brew "cppcheck"
 brew "clang-format"
 brew "cmake"
 brew "exercism"
 brew "travis"
 brew "swiftformat"
 brew "ipython"
+brew "gometalinter"
 
 # Random display utlities
 brew "asciinema"
@@ -75,6 +81,9 @@ brew "htop"
 brew "icdiff"
 brew "ripgrep"
 # Utilities
+brew "graphviz"
+brew "brotli"
+brew "aria2"
 brew "jid"
 brew "tldr"
 brew "fasd"
@@ -109,6 +118,7 @@ brew "carthage"
 
 # Window Manager
 brew "chunkwm", args: ["HEAD"], restart_service: true
+brew "highlight"
 brew "koekeishiya/formulae/skhd"
 
 # Misc
@@ -117,6 +127,9 @@ brew "weechat", args: ["with-aspell", "with-lua", "with-perl", "with-python@2"]
 brew "gettext"
 brew "heroku"
 brew "youtube-dl", args: ["HEAD"]
+cask "qlcolorcode"
+cask "qlstephen"
+cask "google-cloud-sdk"
 
 
 # Terminals
@@ -126,7 +139,8 @@ cask "kitty"
 
 # Editors
 cask "sublime-text"
-cask "visual-studio-code-insiders"
+cask "visual-studio-code"
+cask "clion"
 brew "neovim"
 brew "nano"
 mas "Xcode", id: 497799835
@@ -139,15 +153,12 @@ cask "osxfuse"
 cask "spotify"
 cask "vivaldi-snapshot"
 cask "ti-connect-ce"
-cask "loopback"
-cask "virtualbox"
 cask "appcleaner"
 cask "alfred"
 cask "calibre"
 cask "sourcetree"
 cask "imazing"
 cask "discretescroll"
-cask "bitwarden"
 cask "mailspring"
 cask "wireshark"
 

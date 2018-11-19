@@ -140,7 +140,7 @@ cask "kitty"
 # Editors
 cask "sublime-text"
 cask "visual-studio-code"
-cask "clion"
+cask "intellij-ide"
 brew "neovim"
 brew "nano"
 mas "Xcode", id: 497799835

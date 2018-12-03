@@ -35,3 +35,5 @@ function z() {
     cd "$(fasd -Rdl "$@" | fzf -1 -0 --no-sort +m)" || return 1
 
 }
+
+alias parrot="curl parrot.live"

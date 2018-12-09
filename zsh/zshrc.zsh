@@ -12,7 +12,3 @@ for inc (/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/{completio
 for config ($HOME/.files/zsh/configs/*.zsh) source $config
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
-
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion

@@ -33,6 +33,9 @@ zstyle ':prezto:load' pmodule \
   'dotenv' \
   'git' \
   'osx' \
+  'homebrew' \
+  'python' \
+  'archive' \
   'command-not-found' \
   'syntax-highlighting' \
   'history-substring-search' \

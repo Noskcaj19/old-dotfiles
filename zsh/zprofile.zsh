@@ -19,4 +19,4 @@ export PATH="$HOME/.cargo/bin:$PATH"
 export GOPATH="$HOME/Documents/Development/Go"
 export PATH="$PATH:$GOPATH/bin"
 export PATH="$PATH:/usr/local/Google/flutter/bin"
-
+source ~/.secret_envs

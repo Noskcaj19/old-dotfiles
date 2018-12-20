@@ -6,7 +6,6 @@ tap "homebrew/services"
 tap "homebrew/cask-fonts"
 tap "homebrew/cask-versions"
 tap "homebrew/livecheck"
-tap "homebrew/command-not-found"
 brew "mas"
 
 
@@ -36,6 +35,8 @@ brew "numpy"
 brew "aubio"
 brew "protobuf"
 brew "portaudio"
+brew "libplist"
+brew "opencv@2"
 
 # Languages
 brew "python"
@@ -52,6 +53,8 @@ brew "yarn"
 brew "jq"
 brew "jupyter"
 brew "perl"
+cask "java"
+brew "mono"
 
 # Language related
 brew "cppcheck"
@@ -108,6 +111,7 @@ brew "makedepend"
 
 # Tools
 brew "git"
+brew "git-lfs"
 brew "gawk"
 brew "gnu-sed", args: ["with-default-names"]
 brew "less"
@@ -115,6 +119,11 @@ brew "gdb"
 brew "binutils"
 brew "zsh"
 brew "carthage"
+brew "cocoapods"
+cask "ngrok"
+brew "dep"
+brew "hugo"
+brew "pipenv"
 
 # Window Manager
 brew "chunkwm", args: ["HEAD"], restart_service: true
@@ -130,17 +139,18 @@ brew "youtube-dl", args: ["HEAD"]
 cask "qlcolorcode"
 cask "qlstephen"
 cask "google-cloud-sdk"
+brew "ntfs-3g"
 
 
 # Terminals
 cask "hyper-canary"
 cask "iterm2-nightly"
-cask "kitty"
+cask "alacritty"
 
 # Editors
 cask "sublime-text"
 cask "visual-studio-code"
-cask "intellij-ide"
+cask "intellij-idea"
 brew "neovim"
 brew "nano"
 mas "Xcode", id: 497799835
@@ -152,6 +162,7 @@ cask "leap-motion"
 cask "osxfuse"
 cask "spotify"
 cask "vivaldi-snapshot"
+cask "firefox-developer-edition"
 cask "ti-connect-ce"
 cask "appcleaner"
 cask "alfred"
@@ -160,6 +171,7 @@ cask "sourcetree"
 cask "imazing"
 cask "discretescroll"
 cask "mailspring"
+cask "bitwarden"
 cask "wireshark"
 
 # MAS Applications

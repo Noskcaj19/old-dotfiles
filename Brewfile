@@ -37,6 +37,7 @@ brew "protobuf"
 brew "portaudio"
 brew "libplist"
 brew "opencv@2"
+brew "libyaml"
 
 # Languages
 brew "python"
@@ -55,6 +56,7 @@ brew "jupyter"
 brew "perl"
 cask "java"
 brew "mono"
+brew "ruby"
 
 # Language related
 brew "cppcheck"
@@ -65,6 +67,7 @@ brew "travis"
 brew "swiftformat"
 brew "ipython"
 brew "gometalinter"
+brew "ctags"
 
 # Random display utlities
 brew "asciinema"
@@ -108,6 +111,7 @@ brew "wine"
 brew "autoconf"
 brew "automake"
 brew "makedepend"
+brew "just"
 
 # Tools
 brew "git"
@@ -171,8 +175,8 @@ cask "sourcetree"
 cask "imazing"
 cask "discretescroll"
 cask "mailspring"
-cask "bitwarden"
 cask "wireshark"
+cask "loopback"
 
 # MAS Applications
 mas "1Password", id: 443987910

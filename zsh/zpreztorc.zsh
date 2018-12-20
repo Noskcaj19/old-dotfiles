@@ -34,6 +34,7 @@ zstyle ':prezto:load' pmodule \
   'git' \
   'osx' \
   'homebrew' \
+  'git-extra-commands' \
   'python' \
   'archive' \
   'command-not-found' \

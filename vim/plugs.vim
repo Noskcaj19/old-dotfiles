@@ -12,6 +12,8 @@ Plug 'taohexxx/lightline-buffer'
 Plug 'kshenoy/vim-signature'
 Plug 'airblade/vim-gitgutter'
 Plug 'tpope/vim-vinegar'
+Plug 'mhinz/vim-startify'
+Plug 'junegunn/vim-github-dashboard'
 
 " Navigation
 Plug 'ctrlpvim/ctrlp.vim'
@@ -23,6 +25,7 @@ Plug 'w0rp/ale'
 Plug 'maximbaz/lightline-ale'
 Plug 'autozimu/LanguageClient-neovim', { 'branch': 'next', 'do': 'bash install.sh' }
 Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
+Plug 'majutsushi/tagbar'
 
 "" Snippets
 Plug 'Shougo/neosnippet.vim'
@@ -37,6 +40,9 @@ Plug 'Twinside/vim-haskellConceal', { 'for': 'haskell' }
 "" Go
 Plug 'fatih/vim-go', { 'for': 'go' }
 Plug 'zchee/deoplete-go', { 'do': 'make'}
+"" Python
+Plug 'python-mode/python-mode', { 'branch': 'develop' }
+Plug 'zchee/deoplete-jedi'
 
 " Themes
 Plug 'altercation/vim-colors-solarized'

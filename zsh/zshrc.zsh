@@ -1,18 +1,8 @@
-function load_PZT_mod() {
-	zplugin ice svn silent; zplugin snippet PZT::modules/$1
-}
+export ZPLUG_HOME="$ZSHDIR/zplug"
+source "$ZPLUG_HOME/init.zsh"
 
-function load_PZT_mod_async() {
-	zplugin ice svn silent; zplugin ice wait"0"; zplugin snippet PZT::modules/$1
-}
-
-# Load zplugin
-source "$ZSHDIR/external/zplugin/zplugin.zsh"
-
-# Pure prompt
-zplugin ice pick"async.zsh" src"pure.zsh";
-zplugin light sindresorhus/pure
-
+zplug mafredri/zsh-async
+zplug "sindresorhus/pure"
 
 # Zprezto config (todo: move to file)
 # Must be set prior to module loading
@@ -24,34 +14,41 @@ zstyle ':prezto:module:gnu-utility' prefix 'g'
 zstyle ':prezto:module:syntax-highlighting' pattern \
 	'rm -rf*' 'fg=white,bold,bg=red'
 
-# Zprezto modules
-load_PZT_mod environment
-load_PZT_mod terminal
-load_PZT_mod editor
-load_PZT_mod history
-load_PZT_mod directory
-load_PZT_mod spectrum
-load_PZT_mod utility
-load_PZT_mod completion
-load_PZT_mod fasd
-load_PZT_mod git
-load_PZT_mod osx
-load_PZT_mod python
-load_PZT_mod archive
-load_PZT_mod_async homebrew
+zplug "modules/environment", from:prezto
+zplug "modules/terminal", from:prezto
+zplug "modules/editor", from:prezto
+zplug "modules/history", from:prezto
+zplug "modules/directory", from:prezto
+zplug "modules/spectrum", from:prezto
+zplug "modules/utility", from:prezto
+zplug "modules/completion", from:prezto
+zplug "modules/fasd", from:prezto
+zplug "modules/git", from:prezto
+zplug "modules/osx", from:prezto
+zplug "modules/python", from:prezto
+zplug "modules/archive", from:prezto
+zplug "modules/homebrew", defer:2, from:prezto, if:"[[ $OSTYPE == *darwin* ]]"
+
+zplug "zsh-users/zsh-history-substring-search"
+
+zplug "zdharma/fast-syntax-highlighting", defer:0
+
+zplug "unixorn/git-extra-commands"
+zplug "djui/alias-tips"
+zplug "$ZSHDIR/contrib/dotenv", from:local
 
 
-zplugin light zsh-users/zsh-history-substring-search 
+# Install plugins if there are plugins that have not been installed
+if ! zplug check; then
+    printf "Install? [y/N]: "
+    if read -q; then
+        echo; zplug install
+    fi
+fi
 
+# Then, source plugins and add commands to $PATH
+zplug load
 
-# Load syntax highlighting with async power
-zplugin ice wait"0" atinit"ZPLGM[COMPINIT_OPTS]=-C; zpcompinit; zpcdreplay" lucid
-zplugin light zdharma/fast-syntax-highlighting
-
-
-zplugin light unixorn/git-extra-commands
-zplugin light djui/alias-tips
-zplugin light $ZSHDIR/contrib/dotenv
 
 # load iterm tools
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
@@ -65,3 +62,4 @@ for config ($HOME/.dotfiles/zsh/configs/*.zsh) source $config
 
 # load fzf
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+

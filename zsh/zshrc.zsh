@@ -6,6 +6,8 @@ function load_PZT_mod_async() {
 	zplugin ice svn silent; zplugin ice wait"0"; zplugin snippet PZT::modules/$1
 }
 
+declare -A ZPLGM 
+ZPLGM[HOME_DIR]="$ZSHDIR/zplugins"
 # Load zplugin
 source "$ZSHDIR/external/zplugin/zplugin.zsh"
 

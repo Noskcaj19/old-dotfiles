@@ -1,4 +1,3 @@
 vim/temp_dirs/
-zsh/zplugin/
-zsh/.zplugin/
+zsh/zplugins/
 *.zwc

@@ -35,6 +35,7 @@ Plug 'honza/vim-snippets'
 " Programming language support
 "" Rust
 Plug 'rust-lang/rust.vim'
+Plug 'qnighy/lalrpop.vim'
 "" Haskell
 Plug 'Twinside/vim-haskellConceal', { 'for': 'haskell' }
 "" Go
@@ -48,9 +49,9 @@ Plug 'zchee/deoplete-jedi'
 Plug 'altercation/vim-colors-solarized'
 Plug 'lifepillar/vim-solarized8'
 Plug 'tomasr/molokai'
+Plug 'ajh17/Spacegray.vim'
+Plug 'dracula/vim', { 'as': 'dracula' }
 
-" Random
-Plug 'wakatime/vim-wakatime'
 
 "" Finish loading
 call plug#end()

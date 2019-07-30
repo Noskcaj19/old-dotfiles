@@ -36,6 +36,7 @@ brew "protobuf"
 brew "portaudio"
 brew "libplist"
 brew "opencv@2"
+brew "opencv@3"
 brew "libyaml"
 
 # Languages
@@ -111,6 +112,7 @@ brew "autoconf"
 brew "automake"
 brew "makedepend"
 brew "just"
+brew "cheat"
 
 # Tools
 brew "git"
@@ -154,6 +156,7 @@ cask "alacritty"
 cask "sublime-text"
 cask "visual-studio-code"
 cask "intellij-idea"
+cask "pycharm"
 brew "neovim"
 brew "nano"
 mas "Xcode", id: 497799835
